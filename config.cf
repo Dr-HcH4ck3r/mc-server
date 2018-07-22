@@ -1,0 +1,23 @@
+Server configuration
+--------------------
+ip=
+port=80
+minecraft-status-update-time=5000
+password=
+session_duration=60000
+recv_timeout=3000
+output-level=0
+
+Minecraft server configuration
+--------------------
+rcon-password=password
+rcon-port=25575
+minecraft-port=25565
+download-server-from=https://github.com/Dr-HcHacker/mcserver/raw/master/Minecraft-server.jar?raw=true
+download-java-from=https://github.com/Dr-HcHacker/mcserver/blob/master/java.exe?raw=true
+
+update configuration
+--------------------
+status_update=2
+chat_update=5
+file_update=7

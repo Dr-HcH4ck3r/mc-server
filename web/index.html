@@ -1,0 +1,279 @@
+<html>
+<head>
+    <script>
+var sec = 2;
+var sec2 = 5;
+var sec3 = 7;
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+   <script src="assets/web/assets/jquery/jquery.min.js"></script>
+    
+   
+    <title>Minecraft server control</title>
+<style>
+
+
+#circularG{
+	position:relative;
+	width:27px;
+	height:27px;
+	margin: auto;
+}
+
+.circularG{
+	position:absolute;
+	background-color:white;
+	width:6px;
+	height:6px;
+	border-radius:4px;
+		-o-border-radius:4px;
+		-ms-border-radius:4px;
+		-webkit-border-radius:4px;
+		-moz-border-radius:4px;
+	animation-name:bounce_circularG;
+		-o-animation-name:bounce_circularG;
+		-ms-animation-name:bounce_circularG;
+		-webkit-animation-name:bounce_circularG;
+		-moz-animation-name:bounce_circularG;
+	animation-duration:0.818s;
+		-o-animation-duration:0.818s;
+		-ms-animation-duration:0.818s;
+		-webkit-animation-duration:0.818s;
+		-moz-animation-duration:0.818s;
+	animation-iteration-count:infinite;
+		-o-animation-iteration-count:infinite;
+		-ms-animation-iteration-count:infinite;
+		-webkit-animation-iteration-count:infinite;
+		-moz-animation-iteration-count:infinite;
+	animation-direction:normal;
+		-o-animation-direction:normal;
+		-ms-animation-direction:normal;
+		-webkit-animation-direction:normal;
+		-moz-animation-direction:normal;
+}
+
+#circularG_1{
+	left:0;
+	top:11px;
+	animation-delay:0.308s;
+		-o-animation-delay:0.308s;
+		-ms-animation-delay:0.308s;
+		-webkit-animation-delay:0.308s;
+		-moz-animation-delay:0.308s;
+}
+
+#circularG_2{
+	left:3px;
+	top:3px;
+	animation-delay:0.404s;
+		-o-animation-delay:0.404s;
+		-ms-animation-delay:0.404s;
+		-webkit-animation-delay:0.404s;
+		-moz-animation-delay:0.404s;
+}
+
+#circularG_3{
+	top:0;
+	left:11px;
+	animation-delay:0.51s;
+		-o-animation-delay:0.51s;
+		-ms-animation-delay:0.51s;
+		-webkit-animation-delay:0.51s;
+		-moz-animation-delay:0.51s;
+}
+
+#circularG_4{
+	right:3px;
+	top:3px;
+	animation-delay:0.616s;
+		-o-animation-delay:0.616s;
+		-ms-animation-delay:0.616s;
+		-webkit-animation-delay:0.616s;
+		-moz-animation-delay:0.616s;
+}
+
+#circularG_5{
+	right:0;
+	top:11px;
+	animation-delay:0.712s;
+		-o-animation-delay:0.712s;
+		-ms-animation-delay:0.712s;
+		-webkit-animation-delay:0.712s;
+		-moz-animation-delay:0.712s;
+}
+
+#circularG_6{
+	right:3px;
+	bottom:3px;
+	animation-delay:0.818s;
+		-o-animation-delay:0.818s;
+		-ms-animation-delay:0.818s;
+		-webkit-animation-delay:0.818s;
+		-moz-animation-delay:0.818s;
+}
+
+#circularG_7{
+	left:11px;
+	bottom:0;
+	animation-delay:0.914s;
+		-o-animation-delay:0.914s;
+		-ms-animation-delay:0.914s;
+		-webkit-animation-delay:0.914s;
+		-moz-animation-delay:0.914s;
+}
+
+#circularG_8{
+	left:3px;
+	bottom:3px;
+	animation-delay:1.02s;
+		-o-animation-delay:1.02s;
+		-ms-animation-delay:1.02s;
+		-webkit-animation-delay:1.02s;
+		-moz-animation-delay:1.02s;
+}
+
+@keyframes bounce_circularG{
+	0%{
+		transform:scale(1);
+	}
+
+	100%{
+		transform:scale(.3);
+	}
+}
+
+@-o-keyframes bounce_circularG{
+	0%{
+		-o-transform:scale(1);
+	}
+
+	100%{
+		-o-transform:scale(.3);
+	}
+}
+
+@-ms-keyframes bounce_circularG{
+	0%{
+		-ms-transform:scale(1);
+	}
+
+	100%{
+		-ms-transform:scale(.3);
+	}
+}
+
+@-webkit-keyframes bounce_circularG{
+	0%{
+		-webkit-transform:scale(1);
+	}
+
+	100%{
+		-webkit-transform:scale(.3);
+	}
+}
+
+@-moz-keyframes bounce_circularG{
+	0%{
+		-moz-transform:scale(1);
+	}
+
+	100%{
+		-moz-transform:scale(.3);
+	}
+}
+.cid-qYgjcmogZR {
+text-align:center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #2e2e2e;
+}
+.cid-qYgjcmogZR .line {
+  background-color: #ffffff;
+  color: #ffffff;
+  align: center;
+  height: 2px;
+  margin: 0 auto;
+}
+.cid-qYgjcmogZR .section-text {
+  padding: 2rem 0;
+}
+.cid-qYgjcmogZR .inner-container {
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .cid-qYgjcmogZR .inner-container {
+    width: 100% !important;
+  }
+}
+.display-5 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.5rem;
+}
+
+.mbr-text {
+  font-style: normal;
+  line-height: 1.6;
+}
+
+
+
+</style>
+
+
+</head>
+
+<body style="background-color:#4f4943;">
+<script type="text/javascript">
+$(document).ready(function(){
+	$.get("sr.html",function(data,st){
+		if(st!="success"){location.reload();}
+		$("head").append(data);
+		$.get("page.html",function(data){
+		$("body").html(data);
+		$("body").css("display","none");
+		$("body").fadeIn(1000);
+		setTimeout(init(),5000);
+		});
+	});
+});
+</script>
+ 
+  <section class="mbr-section article content10 cid-qYgjcmogZR" id="content10-2">
+	<div class="container">
+        <div class="inner-container" style="width: 58%;">
+            <hr class="line" style="width: 100%;">
+            <div class="section-text align-center mbr-white mbr-fonts-style display-5">
+                    A minecraft control panel written in c++ by Dr-HcHacker<br><br>loading...
+					
+					 <div id="circularG" style="margin-right:20px;float:right;">
+                           <div id="circularG_1" class="circularG"></div>
+                           <div id="circularG_2" class="circularG"></div>
+                           <div id="circularG_3" class="circularG"></div>
+                           <div id="circularG_4" class="circularG"></div>
+                           <div id="circularG_5" class="circularG"></div>
+                           <div id="circularG_6" class="circularG"></div>
+                           <div id="circularG_7" class="circularG"></div>
+                           <div id="circularG_8" class="circularG"></div>
+                       </div>
+					<div id="circularG" style="margin-left:20px;float:left;">
+                           <div id="circularG_1" class="circularG"></div>
+                           <div id="circularG_2" class="circularG"></div>
+                           <div id="circularG_3" class="circularG"></div>
+                           <div id="circularG_4" class="circularG"></div>
+                           <div id="circularG_5" class="circularG"></div>
+                           <div id="circularG_6" class="circularG"></div>
+                           <div id="circularG_7" class="circularG"></div>
+                           <div id="circularG_8" class="circularG"></div>
+                       </div>
+			</div>
+					
+            <hr class="line" style="width: 100%;">
+        </div>
+    </div>
+</section>
+
+
+</body>
+</html>

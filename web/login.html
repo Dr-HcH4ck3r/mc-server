@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html id="htdx">
+<head>
+  <!-- Site made with Mobirise Website Builder v4.7.7, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.7.7, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/favicon-31x32-1.png" type="image/x-icon">
+  <meta name="description" content="Web Builder Description">
+  <title>login</title>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  
+  
+  
+</head>
+<body id="body" style="height:100%;">
+  <section once="" class="cid-qUofKqsU15" id="footer6-d">
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="col-12">
+                <p class="mbr-text mb-0 mbr-fonts-style display-7"></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section form1 cid-qUoeaYj0kL" id="form1-c">
+
+    
+
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="title col-12 col-lg-8">
+                <h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2">
+                    Minecraft server control login</h2>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="media-container-column col-lg-8" data-form-type="formoid">
+                    
+            <script>
+			function send(){
+			
+				var inhalt=document.getElementById("name-form1-c").value
+				
+				var ds='auth'+inhalt;	
+				$.get(ds,function(data){
+					if(data=="OK"){
+						window.location.assign("index.html");
+					}
+				});
+			return false;
+			}
+			$(document).ready(function(){
+				document.getElementById("name-form1-c").focus();
+			});
+			</script>
+                    <form class="mbr-form">
+                        <div class="row row-sm-offset">
+                            <div class="col-md-4 multi-horizontal" data-for="name">
+                                <div class="form-group">
+                                    <label class="form-control-label mbr-fonts-style display-7" for="name-form1-c"></label>
+                                    <input type="text" class="form-control" name="name" data-form-field="Name" placeholder="password" id="name-form1-c">
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        
+            
+                        <span class="input-group-btn"><button onclick="return send()" type="submit" class="btn btn-primary btn-form display-4">login</button></span>
+                    </form>
+            </div>
+        </div>
+    </div>
+	<br>
+	<p style="font-size:30px;">WELCOME</p><img src="assets/images/redstone.jpg" style="float:right; margin-top:-50px; width:100px;">
+	<br>
+</section>
+  <section once="" class="cid-qUofKqsU15" id="footer6-d">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="col-12">
+                <p class="mbr-text mb-0 mbr-fonts-style display-7"></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>
